@@ -1,0 +1,10 @@
+{
+  "name": "quiz3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "himalaya": "^1.1.0"
+  }
+}
