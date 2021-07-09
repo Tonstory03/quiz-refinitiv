@@ -12,5 +12,6 @@ COPY api/package*.json ./
 RUN yarn
 RUN mkdir public
 COPY --from=clientBuilder /usr/src/client/build /usr/src/api/public
+COPY api . 
 EXPOSE 8080
 RUN yarn start
