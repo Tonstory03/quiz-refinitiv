@@ -36,7 +36,7 @@ const findByFundname = (table, targetName, idxFundName) => {
   return table.children
     .slice(1)
     .map(({children}) => children.filter( tr => tr.children))  
-    .find(([ children ]) => children.children[idxFundName].content.trim() === targetName.trim());
+    .find(([ children ]) => children.children[idxFundName].content.trim().toLowerCase() === targetName.trim().toLowerCase());
 }
 
 const getInputFundName = () => {
